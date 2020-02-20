@@ -180,5 +180,4 @@ function populateDays() {
 
 function getTotalDaysOfMonth(inputMonth, inputYear) {
   return new Date(inputYear, inputMonth + 1, 0).getDate();
-  ß;
 }

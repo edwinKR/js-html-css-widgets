@@ -1,0 +1,226 @@
+body {
+  background-color: pink;
+}
+
+#navbar {
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  background-color: whitesmoke;
+  color: purple;
+}
+
+#avatar {
+  float: right;
+  height: 48px;
+  display: flex;
+}
+
+#avatar:hover {
+  background-color: whitesmoke;
+  color: purple;
+}
+
+#profile-image {
+  border-radius: 50%;
+  height: 90%;
+  justify-content: center;
+}
+
+.wrapper-accordion {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.accordion {
+  background-color: lightcoral;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  border: 5px solid lightgrey;
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0 25px;
+  background-color: lightskyblue;
+  display: none;
+  overflow: hidden;
+}
+
+.panel > p {
+  text-align: center;
+}
+
+.accordion.active:hover {
+  background-color: yellow;
+}
+
+.wrapper-carousel {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.slides {
+  display: block;
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.numbering {
+  color: white;
+  top: 0;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+}
+
+#prev,
+#next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#next {
+  right: 0;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+img {
+  height: 400px;
+}
+
+.date-picker {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 60px;
+  background-color: lightgray;
+  margin: 30px auto;
+  box-shadow: 0px 5px 10px plum;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected-date:hover {
+  background-color: yellow;
+}
+
+.selected-date {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.dates {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  background-color: grey;
+}
+
+.dates.active {
+  display: block;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid white;
+}
+
+.arrows {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+}
+
+.arrows:hover {
+  background-color: yellowgreen;
+}
+
+.arrows:active {
+  background-color: green;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: lightgray;
+}
+
+.days-of-week .day-of-week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 200px;
+}
+
+.single-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-day.selected {
+  background-color: whitesmoke;
+  opacity: 0.3;
+  color: black;
+  border-radius: 50%;
+}

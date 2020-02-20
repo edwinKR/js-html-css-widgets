@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Widgets with JS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="#accordion">Accordion</a>
+    <a href="#carousel">Carousel</a>
+    <div id="avatar">
+      <img id="profile-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdeZGTDWrF7GIBCwOqg8deFJiSsL1S4BYz_xPEPdvo-eNX76Is" />
+    </div>
+  </div>
+
+  <div class="wrapper-accordion">
+    <div class="accordion">Section 1</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <div class="accordion">Section 2</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <div class="accordion">Section 3</div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="wrapper-carousel">
+    <div class="slides">
+      <div class="numbering">1 | 3</div>
+      <img src="https://wallpapercave.com/wp/wp1881604.jpg" style="width: 100%" />
+      <div class="text">Washington DC (1)</div>
+    </div>
+
+    <div class="slides">
+      <div class="numbering">2 | 3</div>
+      <img
+        src="https://www.lovethesepics.com/wp-content/uploads/2012/03/The-Jefferson-Memorial-and-cherry-blossoms-in-a-gray-sunrise.jpg"
+        style="width: 100%" />
+      <div class="text">Washington DC (2)</div>
+    </div>
+
+    <div class="slides">
+      <div class="numbering">3 | 3</div>
+      <img
+        src="https://washington-org.s3.amazonaws.com/s3fs-public/view-of-washington-monument-and-nmaahc-from-old-post-office-tower_ddc-photo.jpg"
+        style="width: 100%" />
+      <div class="text">Washington DC (3)</div>
+    </div>
+
+    <a id="prev">&#10094;</a>
+    <a id="next">&#10095;</a>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="date-picker">
+    <div class="selected-date"></div>
+
+    <div class="dates">
+      <div class="month">
+        <div class="arrows prev-mth">&lt;</div>
+        <div class="mth"></div>
+        <div class="arrows next-mth">&gt;</div>
+      </div>
+
+      <div class="days-of-week">
+        <div class="day-of-week">Sun</div>
+        <div class="day-of-week">Mon</div>
+        <div class="day-of-week">Tue</div>
+        <div class="day-of-week">Wed</div>
+        <div class="day-of-week">Thur</div>
+        <div class="day-of-week">Fri</div>
+        <div class="day-of-week">Sat</div>
+      </div>
+
+      <div class="days">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
